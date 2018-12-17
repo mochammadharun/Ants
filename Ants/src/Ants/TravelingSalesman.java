@@ -29,7 +29,7 @@ public class TravelingSalesman {
      * Run the algorithm.
      */
     public void run () {
-        WindowTSP windowTSP = new WindowTSP(graph.getVertices());
+       // WindowTSP windowTSP = new WindowTSP(graph.getVertices());
 
         Ant bestAnt = null;
         int bestEval = 0;
@@ -50,7 +50,7 @@ public class TravelingSalesman {
                 bestEval = ant.eval();
             }
 
-            windowTSP.draw(bestAnt.getTour());
+          //  windowTSP.draw(bestAnt.getTour());
         }
         
         
@@ -59,7 +59,7 @@ public class TravelingSalesman {
         System.out.println(bestAnt);
         System.out.println("Evaluation: " + bestEval);
         System.out.print("Iterasi: " + iterasi + "\n");
-        windowTSP.dispose();
+      //  windowTSP.dispose();
     }
 
     /**
