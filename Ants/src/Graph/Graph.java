@@ -5,10 +5,7 @@
  */
 package Graph;
 
-/**
- *
- * @author NurRochman
- */
+
 
 import Ants.Ant;
 

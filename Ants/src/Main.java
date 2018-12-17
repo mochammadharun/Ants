@@ -1,18 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- *
- * @author NurRochman
- */
+
 import Ants.TravelingSalesman;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        long startTime = System.currentTimeMillis();
 //        args = new String[1];
 //        args[0] = "-p";
         System.out.println("------------------ANT COLONY OPTIMIZATION------------------");
@@ -20,10 +13,10 @@ public class Main {
             menu();
         } else {
             
-            int ants    = 10;          // Number of ants to run per generation.
+            int ants    = 3;          // Number of ants to run per generation.
             int gen     = 10;          // Number of generations.
-            double evap = 0.001;          // Evaporation rate of pheromones.
-            int alpha   = 1;            // Impact of pheromones on decision making.
+            double evap = 0.0000001;          // Evaporation rate of pheromones.
+            int alpha   = 10;            // Impact of ph\eromones on decision making.
             int beta    = 0;            // Impact of distance on decision making.
             
             System.out.println("Ants per epoch:           " + ants  );
@@ -37,6 +30,8 @@ public class Main {
             travelingSalesman.run();
         }
         System.out.println("-------------------------COMPLETE--------------------------");
+        System.out.println("Running Time: " + (System.currentTimeMillis()- startTime) + " miliSeconds");
+
     }
 
     private static void menu () {

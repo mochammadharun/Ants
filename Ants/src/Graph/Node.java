@@ -5,10 +5,7 @@
  */
 package Graph;
 
-/**
- *
- * @author NurRochman
- */
+
 
 /**
  * This abstract class is the parent of both Vertex and Edge.

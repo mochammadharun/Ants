@@ -18,7 +18,8 @@ import java.util.ArrayList;
  */
 public class TSP_GA {
 public static void main(String[] args) {
-    String fileName = "E:\\kuliah\\OKH\\datasets\\small2.csv";
+    long startTime = System.currentTimeMillis();
+    String fileName = "E:\\kuliah\\OKH\\datasets\\hiddeninstance2.csv";
     File file = new File(fileName);
     try {
         Scanner inputStream = new Scanner(file);
@@ -43,7 +44,7 @@ public static void main(String[] args) {
         e.printStackTrace();
     }
         // Initialize population
-        Population pop = new Population(5000, true);
+        Population pop = new Population(2000, true);
         System.out.println("Initial distance: " + pop.getFittest().getDistance());
 
         // Evolve population for 100 generations 
@@ -61,6 +62,6 @@ public static void main(String[] args) {
         System.out.println("Solution:");
         System.out.println(pop.getFittest()); 
         System.out.println("Jumlah Iterasi:" + iterasi);
-
+        System.out.println("Running Time: " + (System.currentTimeMillis()- startTime) + " miliSeconds");
     }
 }

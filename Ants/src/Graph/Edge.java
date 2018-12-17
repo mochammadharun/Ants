@@ -5,14 +5,6 @@
  */
 package Graph;
 
-/**
- *
- * @author NurRochman
- */
-
-/**
- * A representation of a Graph Edge.
- */
 
 public class Edge extends Node {
     private double pheromone;

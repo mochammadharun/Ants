@@ -1,15 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 package Display;
-
-/**
- *
- * @author NurRochman
- */
 
 import Graph.*;
 
@@ -22,8 +13,8 @@ import java.awt.*;
 
 public class WindowTSP extends JFrame{
     private static final int WIDTH = 600;
-    private static final int HEIGHT = 600 / 16*9;
-    private static final int OFFSET = 40;
+    private static final int HEIGHT =  600 / 16*9;
+    private static final int OFFSET = 4;
     private static final int CITY_SIZE = 6;
 
     private Panel panel;

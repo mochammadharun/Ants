@@ -12,8 +12,8 @@ package genetic_algorithm;
 public class GA {
 
     /* GA parameters */
-    private static final double mutationRate = 0.015;
-    private static final int tournamentSize = 5;
+    private static final double mutationRate = 0.0015;
+    private static final int tournamentSize = 13;
     private static final boolean elitism = true;
 
     // Evolves a population over one generation

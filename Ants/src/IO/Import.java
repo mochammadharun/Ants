@@ -19,7 +19,7 @@ public class Import {
         String dataSetName;
         int startingLine;
 
-        dataSetName = "small2.csv";
+        dataSetName = "hiddeninstance2.csv";
         startingLine = 1;
 
         String[] lines = read(dataSetName).split("\n");

@@ -5,10 +5,7 @@
  */
 package Graph;
 
-/**
- *
- * @author NurRochman
- */
+
 
 import java.util.ArrayList;
 import java.util.HashMap;

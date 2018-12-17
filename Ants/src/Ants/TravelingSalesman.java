@@ -55,11 +55,11 @@ public class TravelingSalesman {
         
         
         
-        System.out.print("Best Tour: ");
+        System.out.print("Best Tour: City ");
         System.out.println(bestAnt);
         System.out.println("Evaluation: " + bestEval);
         System.out.print("Iterasi: " + iterasi + "\n");
-      //  windowTSP.dispose();
+        
     }
 
     /**
