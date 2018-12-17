@@ -24,7 +24,7 @@ public class Main {
             int gen     = 10;          // Number of generations.
             double evap = 0.001;          // Evaporation rate of pheromones.
             int alpha   = 1;            // Impact of pheromones on decision making.
-            int beta    = 50;            // Impact of distance on decision making.
+            int beta    = 0;            // Impact of distance on decision making.
             
             System.out.println("Ants per epoch:           " + ants  );
             System.out.println("Epochs:                   " + gen   );
